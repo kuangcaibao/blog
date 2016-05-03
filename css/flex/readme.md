@@ -165,7 +165,7 @@ flex-direction 和 flex-wrap 的简写
 
 设置单个项目与其他项目不一样的对齐方式，可覆盖容器的 align-item 属性。
 
-默认值为 auto，表示继承容器的 align-item 属性。如果没有父元素则默认值为 stretch。
+默认值为 auto，表示继承容器的 align-items 属性。如果没有父元素则默认值为 stretch。
 
 ![效果](./res/align-self.png)
 
