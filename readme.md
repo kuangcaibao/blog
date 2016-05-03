@@ -3,6 +3,7 @@
 ### tools
 
 1. [markdown简介](./tools/markdown.md)
+2. [git简介](./tools/git.md)
 
 ### css
 
