@@ -30,7 +30,8 @@ svn是一个集中式的代码管理系统。有一个中央代码库，不同�
 
 假设现在有2个github账户： kuangcaibao 和 kuangcaibao2
 
-## 一个没有冲突的 pull request
+
+### 一个没有冲突的 pull request
 
 账户 kuangcaibao 现在 github 上创建一个项目。添加文件 test.txt , 内容如下：
 
@@ -70,7 +71,8 @@ ok, kuangcaibao 看到 kuangcaibao2 的修改是可以的，现在他要把这�
 
 好的，到这里 kuangcaibao 和 kuangcaibao2 进行了一次愉快的玩耍。
 
-## 一个有冲突的 pull request
+
+### 一个有冲突的 pull request
 
 现在 kuangcaibao 和 kuangcaibao2 都对 test.txt 进行修改。
 
