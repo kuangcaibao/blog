@@ -8,7 +8,7 @@
 
 ### 网上搜索的常见做法:
 
-1. 将数据拼成一个 table 页面, 然后 javascript 代码导出
+## 1. 将数据拼成一个 table 页面, 然后 javascript 代码导出
 
 		var exportExcel = (function() {
 
@@ -75,6 +75,35 @@
 
 		})()
 
+这种方式是通过 URI 的方式来下载文件.
+
 注: 
 
 template 中的 `<meta charset="utf-8">` 这个加上可以去掉表格中汉字乱码的情形.
+
+<https://developer.mozilla.org/en-US/docs/Web/HTTP/data_URIs>
+
+
+## 2. 直接调用api来操作文件???
+
+html5 新特性???
+
+<http://www.html5rocks.com/en/tutorials/file/filesystem/>
+<https://developer.mozilla.org/en-US/docs/Using_files_from_web_applications>
+
+### <input type="file">
+
+这个是选取本地文件, 获得本地文件信息, 上传文件.
+
+	// html
+
+	<input type="file" id="file">
+
+	// js
+	var file = document.getElementById("file");
+	file.files  // 这个获得你选择的文件列表
+
+`File` 这个对象
+
+
+### FileEntry

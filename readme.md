@@ -10,6 +10,8 @@
 
 1. [flex 布局](./css/flex/readme.md)
 
+	新的布局机制
+
 ### javascript
 
 1. [keydown 技巧](./javascript/keydown.md)
