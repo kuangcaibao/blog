@@ -137,6 +137,25 @@ flex-direction 和 flex-wrap 的简写
 
 如果有3个项目，都含有类 item，则这3个项目等分容器空间（水平方向）。
 
+> 这里的 flex-grow 是按比例分配剩下的控件
+
+	<div class="container">
+		<span class="item">Hello world</span>
+		<span class="item"></span>
+		<span class="item"></span>
+	</div>
+
+	// css
+	.container {
+		display: flex;
+		width: 300px;
+	}
+	.item {
+		flex: 1 1 auto;
+	}
+
+假定 Hello world 长度 60px, 那么最后显示的效果第一个 span 长度 140px, 后面的都是 80px .
+
 ### flex-shrink
 
 定义项目的缩放比例，默认值为1.即空间不足，该项目将缩小。值0，不缩放。负值无效。
