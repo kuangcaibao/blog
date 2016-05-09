@@ -38,3 +38,8 @@ blabla, 你修改了一些文件, 执行 `git status` 命令查看修改了哪�
 将 stage 阶段的文件提交到 git 仓库, 版本更新.
 
 ### git branch
+
+
+### git pull
+
+将远端仓库中的代码更新到本地仓库。

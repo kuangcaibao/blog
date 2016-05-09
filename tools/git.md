@@ -101,3 +101,78 @@ ok, kuangcaibao 看到 kuangcaibao2 的修改是可以的，现在他要把这�
 
 ![change](./res/git_6.png)
 
+===
+
+冲突了，我们看看 github 界面给我们什么提示？
+
+> If you cannot merge a pull request automatically here, you have the option of checking it out via command line to resolve conflicts and perform a manual merge.
+
+如果不能自动合并，你可以通过命令行来手动解决冲突，并合并。
+
+> Step 1: From your project repository, check out a new branch and test the changes.
+
+> git checkout -b kuangcaibao2-master master
+> git pull https://github.com/kuangcaibao2/a-github-test.git master
+
+> Step 2: Merge the changes and update on GitHub.
+
+> git checkout master
+> git merge --no-ff kuangcaibao2-master
+> git push origin master
+
+第一步：
+
+1. 把自己主分支的代码checkout到分支 kuangcaibao2-master 上
+
+2. 把 kuangcaibao2 的主分支更新到本地的master分支上
+
+这个时候会有如下的截图的效果：
+
+![git_conflict](./res/git_conflict.png)
+
+第二步：
+
+上面的命令执行没有效果，报错。
+
+下面我们来看看差异：
+
+	git diff
+
+![git_diff](./res/git_diff.png)
+
+`<<<<<<< HEAD` 到 `=====` 之间的内容表示 HEAD 中有冲突的部分
+
+`=======` 到 `>>>>>>>` 之间的内容表示 版本xxx 中与 HEAD 的冲突部分。
+
+在这里看到这2个内容没有重叠的部分。
+
+	git add test.txt
+	git commit -m "resolve conflict"
+
+好了，现在git不报冲突了，我们把修改的内容推送到 github 上吧。
+
+	git push git@github.com:kuangcaibao/a-github-test.git master
+
+或者
+	
+	git push origin master
+
+在 github 上看到我们合并的内容，如下：
+
+![git_merge](./git_merge.png)
+
+:( 内容多了一些，说明应该修改下内容
+
+OK，到这里 kuangcaibao 账户解决了 kuangcaibao2 的 pull-request 的冲突，我们现在来看看 kuangcaibao2 在 github 上怎么更新他的代码库。
+
+![kuangcaibao2_1](./res/kuangcaibao2_1.png)
+
+我们点击 compare 功能，比较 kuangcaibao 和 kuangcaibao2 的差异。以 kuangcaibao2 的 master 分支为 base 比较。结果如下：
+
+![kuangcaibao2_2](./res/kuangcaibao2_2.png)
+
+这时， 我们创建一个 Merge Pull Request , 自动合并内容。
+
+大功告成！！！
+
+当然实际项目中，差异的地方会比较多。但是合并的过程还是一样的。
