@@ -1,45 +1,50 @@
 在这里介绍 git 的控制台命令
 
-git流程:  src -> staged -> commit
+git 操作流程一般：
 
-### git init
+1. 初始化一个仓库， 或者 clone 一个已有的仓库
 
-本地初始化一个库
+2. 修改文件， 添加修改的文件到暂存区（Index）
 
-### git clone
-
-克隆版本库, 可以支持多种协议, 网络协议或者本地协议.
-
-	git clone [url] [your rep name]
-
-	git clone git@github.com:kuangcaibao/blog.git
-	git clone ./blog blog-clone  // 将本地的 blog 库克隆成 blog-clone 库
+3. 提交修改文件到 HEAD 区
 
 
-克隆远程仓库中的某个分支  (没有这个写法  :( )
+### Step1
 
-	git clone git@github.com:kuangcaibao/kuangcaibao-pro.git -b master local-less
+初始化一个仓库
+
+	> mkdir a-git-pro
+	> cd a-git-pro
+	> git init 
+
+clone一个已有的仓库
+
+	> git clone git@github.com:kuangcaibao/blog.git [name]
+
+	> git clone https://github.com/kuangcaibao/blog.git [name]
+
+	> git clone ../blog [name]
+
+### Step2
+
+现在有一个仓库了，我们需要干点事。修改，添加文件， blabla ...
+
+`git status`
+
+检查当前分支下修改过的文件。
 
 
+`git add`
+
+添加文件到暂存区（Index）中。可以 
+
+`git add <filename>` 添加单个文件
+
+`git add *` 添加所有的修改文件
 
 
-### git status
+### Step3
 
-blabla, 你修改了一些文件, 执行 `git status` 命令查看修改了哪些文件
+`git commit -m [msg]`
 
-### git add
-
-	git add *
-
-将修改的文件推到 stage 阶段.
-
-### git commit
-
-将 stage 阶段的文件提交到 git 仓库, 版本更新.
-
-### git branch
-
-
-### git pull
-
-将远端仓库中的代码更新到本地仓库。
+提交修改文件到 HEAD 区，会有一个 commit SHA 值，表示版本号。
