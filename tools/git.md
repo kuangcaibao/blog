@@ -112,12 +112,15 @@ ok, kuangcaibao 看到 kuangcaibao2 的修改是可以的，现在他要把这�
 > Step 1: From your project repository, check out a new branch and test the changes.
 
 > git checkout -b kuangcaibao2-master master
+
 > git pull https://github.com/kuangcaibao2/a-github-test.git master
 
 > Step 2: Merge the changes and update on GitHub.
 
 > git checkout master
+
 > git merge --no-ff kuangcaibao2-master
+
 > git push origin master
 
 第一步：
