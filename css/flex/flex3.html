@@ -1,0 +1,81 @@
+<html>
+<head>
+<title>flex test</title>
+<meta name="viewport" content="initial-scale=1, maximum-scale=3, minimum-scale=1, user-scalable=no">
+
+<style type="text/css">
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    height: 100%;
+  }
+
+  .div-1, .div-2, .div-3 {
+    flex: 1 1 auto;
+    display: flex;
+  }
+
+  .div-1, .div-3 {
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .div-3 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .div-2 {
+    height: 100%;
+    margin-bottom: 30px;
+    overflow: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /*p { padding: 0; margin: 0; line-height: 50px;}*/
+
+</style>
+
+</head>
+<body>
+
+  <div class="wrapper">
+
+    <div class="div-1">area1</div>
+
+    <div class="div-2">
+      <p>1</p>
+      <p>2</p>
+      <p>3</p>
+      <p>4</p>
+      <p>5</p>
+      <p>6</p>
+      <p>7</p>
+      <p>8</p>
+      <p>9</p>
+      <p>10</p>
+      <p>11</p>
+      <p>12</p>
+      <p>13</p>
+      <p>14</p>
+      <p>15</p>
+      <p>16</p>
+      <p>17</p>
+      <p>18</p>
+      <p>19</p>
+    </div>
+
+    <div class="div-3">area3</div>
+
+  </div>
+
+</body>
+</html>

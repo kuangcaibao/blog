@@ -87,6 +87,13 @@ flex-direction 和 flex-wrap 的简写
 
 ![效果图](./res/justify-content.png)
 
+
+注意, 这个主轴表示的横轴. 如果你的这个区域高度很高, 那么主轴居中, 上面有部分会被隐藏掉.即使下拉也出不来.
+
+![效果图](./res/justify-content-1.png)
+
+具体代码实例:  [实例3](./flex3.html)
+
 ### align-items
 
 定义项目在交叉轴(纵轴)上的对齐方式, 可取5个值:
@@ -197,6 +204,12 @@ flex-direction 和 flex-wrap 的简写
 2. 实例2，item也可以再次成为container
 
 	[实例2](flex2.html)
+
+3. 实例3, 手机中布局
+
+	3栏, title, body, bottom  其中 body 区域撑满剩下区域
+
+	[实例3](flex3.html)
 
 ## 参考
 
