@@ -4,7 +4,11 @@
 
 1. [markdown简介](./tools/markdown.md)
 
-2. [git简介](./tools/git.md)
+2. [git 简介](./tools/git.md)
+
+3. [git 命令简介](./tools/git_cli.md)
+
+4. [vim](http://coolshell.cn/articles/5426.html)
 
 ### css
 
