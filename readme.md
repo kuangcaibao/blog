@@ -10,6 +10,12 @@
 
 4. [vim](http://coolshell.cn/articles/5426.html)
 
+5. [sublime-text](http://macplay.leanote.com/post/%E8%BF%91%E4%B9%8E%E5%AE%8C%E7%BE%8E%E7%9A%84-Markdown-%E5%86%99%E4%BD%9C%E4%BD%93%E9%AA%8C-Sublime-Text-3-OmniMarkupPreviewer)
+
+6. [sublime cli](./tools/sublime-cli.md)
+
+7. [一个前端程序猿的Sublime Text3的自我修养](http://guowenfh.github.io/2015/12/26/SublimeText/)
+
 ### css
 
 1. [flex 布局](./css/flex/readme.md)
