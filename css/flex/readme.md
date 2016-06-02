@@ -214,3 +214,42 @@ flex-direction 和 flex-wrap 的简写
 ## 参考
 
 [阮一峰flex介绍](http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html?utm_source=tuicool)
+
+
+## flex 布局兼容性
+
+### flex
+
+	display: flex;
+
+![desktop](./res/support_desktop_flex.png)
+
+![mobile](./res/support_mobile_flex.png)
+
+### justify-content
+
+	justify-content: flex-start | flex-end | center | space-between | space-around ;
+
+![desktop](./res/support_desktop_justify_content.png)
+
+![mobile](./res/support_mobile_justify_content.png) 
+
+### align-items
+
+	align-items: flex-start | flex-end | center | baseline | stretch;
+
+![desktop](./res/support_desktop_align_items.png)
+
+![mobile](./res/support_mobile_align_items.png)
+
+### flex-direction
+
+	flex-direction: row | row-reverse | column | column-reverse;
+
+![desktop](./res/support_desktop_flex_direction.png)
+
+![mobile](./res/support_mobile_flex_direction.png)
+
+<https://developer.mozilla.org/en-US/docs/Web/CSS/flex-grow>
+
+> 说了这么多扯淡的，原来直接在 `css` 前面加上 `-webkit` 就可以了
