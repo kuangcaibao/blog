@@ -40,6 +40,9 @@
 
 4. [不错的前端组件库](./react/ui.md)
 
+5. [Dom&Element](./javascript/20160612.md)
+
+6. [es6](./javascript/20160625.md)
 
 ### 其他
 
@@ -48,3 +51,5 @@
 ### 干货
 
 <http://www.alloyteam.com/2016/01/webpack-use-optimization/>
+
+[不错的Android手机模拟器 - 靠谱助手](http://www.kpzs.com/)
