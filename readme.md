@@ -53,3 +53,9 @@
 <http://www.alloyteam.com/2016/01/webpack-use-optimization/>
 
 [不错的Android手机模拟器 - 靠谱助手](http://www.kpzs.com/)
+
+[分分钟教你搭建RESTful API 模拟器](http://leftstick.github.io/tech/2014/09/10/mockbackend)
+
+### [重复的轮子]
+
+1. [Promise](./javascript/20160701.md)
