@@ -87,6 +87,13 @@ flex-direction 和 flex-wrap 的简写
 
 ![效果图](./res/justify-content.png)
 
+
+注意, 这个主轴表示的横轴. 如果你的这个区域高度很高, 那么主轴居中, 上面有部分会被隐藏掉.即使下拉也出不来.
+
+![效果图](./res/justify-content-1.png)
+
+具体代码实例:  [实例3](./flex3.html)
+
 ### align-items
 
 定义项目在交叉轴(纵轴)上的对齐方式, 可取5个值:
@@ -198,6 +205,51 @@ flex-direction 和 flex-wrap 的简写
 
 	[实例2](flex2.html)
 
+3. 实例3, 手机中布局
+
+	3栏, title, body, bottom  其中 body 区域撑满剩下区域
+
+	[实例3](flex3.html)
+
 ## 参考
 
 [阮一峰flex介绍](http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html?utm_source=tuicool)
+
+
+## flex 布局兼容性
+
+### flex
+
+	display: flex;
+
+![desktop](./res/support_desktop_flex.png)
+
+![mobile](./res/support_mobile_flex.png)
+
+### justify-content
+
+	justify-content: flex-start | flex-end | center | space-between | space-around ;
+
+![desktop](./res/support_desktop_justify_content.png)
+
+![mobile](./res/support_mobile_justify_content.png) 
+
+### align-items
+
+	align-items: flex-start | flex-end | center | baseline | stretch;
+
+![desktop](./res/support_desktop_align_items.png)
+
+![mobile](./res/support_mobile_align_items.png)
+
+### flex-direction
+
+	flex-direction: row | row-reverse | column | column-reverse;
+
+![desktop](./res/support_desktop_flex_direction.png)
+
+![mobile](./res/support_mobile_flex_direction.png)
+
+<https://developer.mozilla.org/en-US/docs/Web/CSS/flex-grow>
+
+> 说了这么多扯淡的，原来直接在 `css` 前面加上 `-webkit` 就可以了
