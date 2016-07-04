@@ -48,3 +48,9 @@ clone一个已有的仓库
 `git commit -m [msg]`
 
 提交修改文件到 HEAD 区，会有一个 commit SHA 值，表示版本号。
+
+## 分支操作
+
+## 更新操作
+
+## 冲突解决
