@@ -50,11 +50,13 @@
 
 ### 干货
 
-<http://www.alloyteam.com/2016/01/webpack-use-optimization/>
+- <http://www.alloyteam.com/2016/01/webpack-use-optimization/>
 
-[不错的Android手机模拟器 - 靠谱助手](http://www.kpzs.com/)
+- [不错的Android手机模拟器 - 靠谱助手](http://www.kpzs.com/)
 
-[分分钟教你搭建RESTful API 模拟器](http://leftstick.github.io/tech/2014/09/10/mockbackend)
+- [分分钟教你搭建RESTful API 模拟器](http://leftstick.github.io/tech/2014/09/10/mockbackend)
+
+- [面向Node.js新手的7个技巧](http://jinlong.github.io/2013/10/17/7-tips-for-a-node-dot-js-padawan/)
 
 ### [重复的轮子]
 
