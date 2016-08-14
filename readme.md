@@ -53,3 +53,8 @@
 <http://www.alloyteam.com/2016/01/webpack-use-optimization/>
 
 [不错的Android手机模拟器 - 靠谱助手](http://www.kpzs.com/)
+
+
+### [CSS模块化](./items/20160707/index.md)
+
+最近在写 `react`, 组件化。每个组件都是由 `js` 和 `css` 文件组成。`css` 中类的名称很容易重名，这里 `google` 后提到了 `css module`
