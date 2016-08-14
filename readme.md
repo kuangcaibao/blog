@@ -50,11 +50,21 @@
 
 ### 干货
 
-<http://www.alloyteam.com/2016/01/webpack-use-optimization/>
+- <http://www.alloyteam.com/2016/01/webpack-use-optimization/>
 
-[不错的Android手机模拟器 - 靠谱助手](http://www.kpzs.com/)
+- [不错的Android手机模拟器 - 靠谱助手](http://www.kpzs.com/)
 
+- [不错的Android手机模拟器 - 靠谱助手](http://www.kpzs.com/)
 
-### [CSS模块化](./items/20160707/index.md)
+- [分分钟教你搭建RESTful API 模拟器](http://leftstick.github.io/tech/2014/09/10/mockbackend)
 
-最近在写 `react`, 组件化。每个组件都是由 `js` 和 `css` 文件组成。`css` 中类的名称很容易重名，这里 `google` 后提到了 `css module`
+- [面向Node.js新手的7个技巧](http://jinlong.github.io/2013/10/17/7-tips-for-a-node-dot-js-padawan/)
+
+- [CSS模块化](./items/20160707/index.md)
+
+	最近在写 `react`, 组件化。每个组件都是由 `js` 和 `css` 文件组成。`css` 中类的名称很容易重名，这里 `google` 后提到了 `css module`
+
+### [重复的轮子]
+
+1. [Promise](./javascript/20160701.md)
+>>>>>>> 139fed9dce28e13dff83080befea472c24d03929
