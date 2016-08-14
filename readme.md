@@ -67,4 +67,3 @@
 ### [重复的轮子]
 
 1. [Promise](./javascript/20160701.md)
->>>>>>> 139fed9dce28e13dff83080befea472c24d03929
