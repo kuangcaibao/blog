@@ -58,6 +58,18 @@
 
 - [面向Node.js新手的7个技巧](http://jinlong.github.io/2013/10/17/7-tips-for-a-node-dot-js-padawan/)
 
+- [移动端 HTML5 页面常见问题 —— 样式篇](http://note.rpsh.net/posts/2015/08/27/mobile-web-html-css-faq/)
+
+- [在浏览器端用js创建和下载文件](http://www.alloyteam.com/2014/01/use-js-file-download/)
+
 ### [重复的轮子]
 
 1. [Promise](./javascript/20160701.md)
+
+### 3rd
+
+1. [stormpath](stormpath.com) 
+	
+	国内用的人比较少，同时用户的验证，后端同学一般都要实现。
+
+	对于前端同学，可以节省开发时间。
