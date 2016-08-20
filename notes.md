@@ -15,3 +15,11 @@
 # node
 
 `node` 操作笔记。[详细](./notes/20160810/01.md)
+
+# js 设计模式
+
+[详细](./notes/20160820/index.md)
+
+# MongDB
+
+[详细](./notes/20160820/mongodb.md)

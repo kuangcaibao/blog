@@ -1,0 +1,47 @@
+# 概念
+
+`db`, `collection`, `document`。
+
+各自对应传统关系型数据库概念：
+
+| mongdb | mysql |
+| -- | -- |
+| db | db |
+| collection| table |
+| document | 行记录 |
+
+# 操作
+
+安装操作说明，[详细](http://www.cnblogs.com/hoojo/archive/2011/06/01/2066426.html)
+
+# mongoose
+
+node 中接入 Mongdb 数据库的工具。 Schema, Model, Entity.
+
+Schema 数据属性定义模型，Mongodb 中的 collection。
+
+Model 根据 Schema 生成模型。
+
+Entity 由 Model 创建的实体，最后会成为 Mongodb 中的 doc。
+
+> Model 和 Entity 都能够操作数据库。
+
+一个简单示例：
+
+	var mongoose = require("mongoose");
+	var db = mongoose.connect("mongodb://127.0.0.1:27017/test");  // 链接 test 数据库。
+
+	db.on("error", function() {...});
+	db.on("open", function() {...});
+
+	var userSchema = new mongoose.Schema({
+		name: String,
+		age: Number
+	});
+
+	var User = mongoose.model("User", userSchema); // Model
+	var user = new User({ name: "xiaoming", age: 22 }); // Entity
+
+	user.save(function() {...})  // Entity 
+
+# mongoose 操作： 增，删，改，查

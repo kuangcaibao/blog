@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>observer</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+</head>
+<body>
+
+<button id="addNewObserver">Add New Observer Checkbox</button>
+<button id="addAnotherObserver">Add Another Observer Checkbox</button>
+<input type="checkbox" id="mainCheckbox">
+<div id="observersContainer"></div>
+
+</body>
+
+<script type="text/javascript">
+	
+	// 观察者列表
+	function ObserverList() {
+		this.observerList = [];
+	}
+
+	ObserverList.prototype.Add = function(obj) {
+		return this.observerList.push(obj);
+	}
+
+	ObserverList.prototype.Remove = function() {
+		this.observerList.pop();
+	}
+
+	ObserverList.prototype.Get = function(index) {
+		if(index > -1 && index < this.observerList.length) {
+			return this.observerList[index];
+		}
+	}
+
+	ObserverList.prototype.Empty = function() {
+		this.observerList = [];
+	}
+
+	ObserverList.prototype.Count = function() {
+		return this.observerList.length;
+	}
+
+	// 目标
+	function Subject() {
+		this.observers = new ObserverList();
+	}
+
+	Subject.prototype.AddObserver = function(observer) {
+		this.observers.Add(observer);
+	}
+
+	Subject.prototype.RemoveObserver = function() {
+		this.observers.Remove();
+	}
+
+	Subject.prototype.Notify = function(context) {
+		var observerCount = this.observers.Count();
+		for(var i = 0; i < observerCount; i++) {
+			this.observers.Get(i).Update(context);
+		}
+	}
+
+	// 观察者对象
+	function Observer() {
+		this.Update = function() {
+
+			// 可能每个对象的更新操作不一样
+		};
+	}
+
+	function extend(obj, extension) {
+		for(var key in obj) {
+			extension[key] = obj[key];
+		}
+	}
+
+
+	// 这个示例中，mainCheckbox 是观察目标，根据这个 checkbox 的 value 值来更新对应的观察者的 value 值。
+	var controlCheckbox = document.getElementById("mainCheckbox");
+	var addBtn = document.getElementById("addNewObserver");
+	var addAnotherBtn = document.getElementById("addAnotherObserver");
+	var container = document.getElementById("observersContainer");
+
+	// 具体的目标
+	extend(new Subject(), controlCheckbox);
+	controlCheckbox.onclick = new Function("controlCheckbox.Notify(controlCheckbox.checked)");
+
+	addBtn.onclick = AddNewObserver;
+	addAnotherBtn.onclick = AddAnotherObserver;
+
+	function AddAnotherObserver() {
+		
+		// 具体的观察者
+		var check = document.createElement("input");
+		check.type = "checkbox";
+		extend(new Observer(), check);
+		check.Update = function(value) {
+			this.checked = !value;
+		}
+
+		controlCheckbox.AddObserver(check);
+		container.appendChild(check);
+
+	}
+
+	function AddNewObserver() {
+
+		var check = document.createElement("input");
+		check.type = "checkbox";
+		extend(new Observer(), check);
+		check.Update = function(value) {
+			this.checked = value;
+		}
+
+		controlCheckbox.AddObserver(check);
+		container.appendChild(check);
+	}
+
+
+	/*
+
+		观察者模式，目标状态变化时，调用观察者的更新函数，使得观察者的状态和目标的状态一致
+	
+	*/ 
+
+</script>
+
+</html>
