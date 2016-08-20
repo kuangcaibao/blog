@@ -54,8 +54,6 @@
 
 - [不错的Android手机模拟器 - 靠谱助手](http://www.kpzs.com/)
 
-- [不错的Android手机模拟器 - 靠谱助手](http://www.kpzs.com/)
-
 - [分分钟教你搭建RESTful API 模拟器](http://leftstick.github.io/tech/2014/09/10/mockbackend)
 
 - [面向Node.js新手的7个技巧](http://jinlong.github.io/2013/10/17/7-tips-for-a-node-dot-js-padawan/)
@@ -64,6 +62,18 @@
 
 	最近在写 `react`, 组件化。每个组件都是由 `js` 和 `css` 文件组成。`css` 中类的名称很容易重名，这里 `google` 后提到了 `css module`
 
+- [移动端 HTML5 页面常见问题 —— 样式篇](http://note.rpsh.net/posts/2015/08/27/mobile-web-html-css-faq/)
+
+- [在浏览器端用js创建和下载文件](http://www.alloyteam.com/2014/01/use-js-file-download/)
+
 ### [重复的轮子]
 
 1. [Promise](./javascript/20160701.md)
+
+### 3rd
+
+1. [stormpath](stormpath.com) 
+	
+	国内用的人比较少，同时用户的验证，后端同学一般都要实现。
+
+	对于前端同学，可以节省开发时间。
