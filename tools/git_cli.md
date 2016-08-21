@@ -155,3 +155,9 @@ reset有一些参数:
 ![xx](./res/git_version.png)
 
 可以看到 dev 上的 readme.md 文件的内容合并到了 master 的 example.md 文件中. 而不是我期望的 2 个文件: readme.md 和 example.md .  why?  怎么解决能得到我需要的效果???
+
+
+
+# git pull
+
+1. `git pull` 去远程仓库去内容，合并到当前分支上。如果要取消 `git pull` 操作，只需执行 `git reset --hard`.
