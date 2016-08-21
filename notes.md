@@ -19,3 +19,7 @@
 # js 设计模式
 
 [详细](./notes/20160820/index.md)
+
+# MongDB
+
+[详细](./notes/20160820/mongodb.md)
