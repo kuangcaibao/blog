@@ -161,3 +161,27 @@ reset有一些参数:
 # git pull
 
 1. `git pull` 去远程仓库去内容，合并到当前分支上。如果要取消 `git pull` 操作，只需执行 `git reset --hard`.
+
+
+# git tag
+
+	> git tag
+
+显示所有的标签
+
+	> git tag -d <tag name>
+
+删除某个标签
+
+	> git tag <tag name>
+
+在当前版本上创建标签
+
+	> git push <remote> <tag name>
+
+将某个标签上传到远端服务器上
+
+
+# 删除远程分支
+
+	> git push <remote name> :<remote branch>
