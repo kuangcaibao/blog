@@ -44,6 +44,8 @@ Promise 解决了 `call hell`, `return` , `catch` 这些的使用问题。
 
 一个更好的写法：
 
-	Promise.resolve(promiseTest(0)).then(promiseTest).catch(function(err) {
+	Promise.resolve(function() {
+		return promiseTest(0);
+	}).then(promiseTest).catch(function(err) {
 		console.log(err);
 	})
