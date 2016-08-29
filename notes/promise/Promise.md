@@ -49,3 +49,19 @@ Promise 解决了 `call hell`, `return` , `catch` 这些的使用问题。
 	}).then(promiseTest).catch(function(err) {
 		console.log(err);
 	})
+
+## async/await
+
+	async function sleep(time) {
+	  return new Promise( (resolve, reject) => {
+	   setTimeout(function() {
+	     resolve();
+	   }, time); 
+	  })
+	}
+	
+	(async function() {
+	   console.log(new Date());
+	   await sleep(3000);
+	   console.log(new Date());
+	})()
