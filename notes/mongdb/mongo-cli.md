@@ -21,3 +21,7 @@
 	> db.<collection name>.drop()
 
 清空某个 collection 的数据
+
+	> db.<collection name>.find()
+
+显示某个 collection 的所有 doc

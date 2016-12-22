@@ -54,3 +54,11 @@
 我们可以根据 `Link` 中的 `to` 属性来指定路由的切换，这个交给了 `react-router` 处理。但是如果我要手动切换路径呢？
 
 [stackoverflow](http://stackoverflow.com/questions/31079081/programmatically-navigate-using-react-router)
+
+## react-router 在程序中路径跳转
+
+	import { browserHistory } from "react-router";
+
+	// ...
+
+	browserHistory.push([你的跳转路径]);
