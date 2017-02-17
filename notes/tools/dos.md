@@ -1,0 +1,1 @@
+[批处理最完整人性化教程(.bat文件语法)](http://www.cnblogs.com/s1ihome/archive/2009/01/15/batTutorial.html)
