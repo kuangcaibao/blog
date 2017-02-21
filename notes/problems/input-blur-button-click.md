@@ -1,6 +1,14 @@
 ### 问题描述
 
-点击 `li` 下的 `button`，也触发了 `input` 标签的 `blur` 事件，目前看到只执行了 `input` 的 `blur` 事件，`button` 点击事件未执行，why？
+在 `Vue` 页面中有一个 `button` 按钮，绑定一个 `click` 事件。`input` 输入框，绑定 `blur` 事件。
+
+`input blur` 事件处理逻辑是隐藏 `button` 按钮。
+
+开始的时候，焦点聚焦到 `input` 中，`button` 按钮显示出来。点击 `button`，事件处理顺序是 `input blur` > `button click`
+
+这时，由于 `button` 隐藏起来了，所以 `click` 事件没有被执行。
+
+why？
 
 ### Reporduction Link
 
