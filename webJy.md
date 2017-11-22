@@ -45,17 +45,5 @@ webJy/
 功能配置文件，界面配置，包含内容：
 
 ```
-define(function(require, exports, module) {
-  
-module.exports = {
-  
-  // 界面布局类型
-  // 不配置，读取默认布局 <非必填>
-  layout: "",
 
-  // 这里为读取该界面的业务逻辑js文件 <必填>
-  funcjs: "",
-}
-
-})
 ```

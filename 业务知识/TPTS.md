@@ -70,9 +70,12 @@
 
 1. 服务注册，`[TPST根路径]/configs/tdx.ini`
 
-	[MODULES]
-	MODULES=TSTCSvc.dll
-	SERVICES=TSTCSvc
+	```
+
+		[MODULES]
+		MODULES=TSTCSvc.dll
+		SERVICES=TSTCSvc
+	```
 
 2. 转发到 `TC` 端的功能注册，`[TPST根路径]/configs/sygn.ini`
 
