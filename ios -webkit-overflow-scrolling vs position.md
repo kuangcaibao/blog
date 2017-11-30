@@ -110,7 +110,7 @@ var hideDialog = function(e) {
 
 1. -webkit-overflow-scrolling: touch
 
-    ![ios-touch](images/ios-touch.png)
+    ![ios-touch](https://github.com/kuangcaibao/blog/blob/master/images/ios-auto.png)
 
 2. -webkit-overflow-scrolling: auto
 
